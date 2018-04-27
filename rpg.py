@@ -56,8 +56,8 @@ def combat_round(fighter1,fighter2):
 
 # Main function creates two instances of fightesr and runs through the came utilizing the various methods and combat function. If one or both of the players die, then the battle is over and the results are printed.
 def main():
-    fighter1 = Fighter('Death_Mongrel')
-    fighter2 = Fighter('Hurt_then_Pain')
+    fighter1 = Fighter(input('Write your characters name '))
+    fighter2 = Fighter(input('Write your opponent\'s name '))
     count = 1
     while fighter1.is_alive() and fighter2.is_alive():
         print('\n=================== ROUND '+str(count)+' ===================')
